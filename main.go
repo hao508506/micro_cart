@@ -3,11 +3,12 @@ package main
 import (
 	"fmt"
 	"log"
-	"micro_cart/common"
-	"micro_cart/domain/repository"
-	"micro_cart/domain/service"
-	"micro_cart/handler"
-	proto "micro_cart/proto/cart"
+
+	"github.com/hao508506/micro_cart/common"
+	"github.com/hao508506/micro_cart/domain/repository"
+	"github.com/hao508506/micro_cart/domain/service"
+	"github.com/hao508506/micro_cart/handler"
+	proto "github.com/hao508506/micro_cart/proto/cart"
 
 	"github.com/go-micro/plugins/v4/registry/consul"
 	ratelimiter "github.com/go-micro/plugins/v4/wrapper/ratelimiter/uber"

@@ -1,8 +1,9 @@
 package test
 
 import (
-	"micro_cart/common"
 	"testing"
+
+	"github.com/hao508506/micro_cart/common"
 )
 
 func TestGetConsulConfig(t *testing.T) {

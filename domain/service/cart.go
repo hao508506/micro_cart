@@ -1,8 +1,8 @@
 package service
 
 import (
-	"micro_cart/domain/model"
-	"micro_cart/domain/repository"
+	"github.com/hao508506/micro_cart/domain/model"
+	"github.com/hao508506/micro_cart/domain/repository"
 )
 
 type ICartService interface {

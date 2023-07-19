@@ -4,11 +4,11 @@ import (
 	"context"
 	"log"
 
-	"micro_cart/common"
-	"micro_cart/domain/model"
-	"micro_cart/domain/service"
-	"micro_cart/proto/cart"
-	proto "micro_cart/proto/cart"
+	"github.com/hao508506/micro_cart/common"
+	"github.com/hao508506/micro_cart/domain/model"
+	"github.com/hao508506/micro_cart/domain/service"
+	"github.com/hao508506/micro_cart/proto/cart"
+	proto "github.com/hao508506/micro_cart/proto/cart"
 )
 
 type Cart struct {

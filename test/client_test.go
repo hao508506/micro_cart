@@ -11,8 +11,8 @@ import (
 	"go-micro.dev/v4/client"
 	"go-micro.dev/v4/registry"
 
-	"micro_cart/common"
-	proto "micro_cart/proto/cart"
+	"github.com/hao508506/micro_cart/common"
+	proto "github.com/hao508506/micro_cart/proto/cart"
 
 	opentracing_micro "github.com/go-micro/plugins/v4/wrapper/trace/opentracing"
 )

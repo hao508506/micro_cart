@@ -2,7 +2,8 @@ package repository
 
 import (
 	"errors"
-	"micro_cart/domain/model"
+
+	"github.com/hao508506/micro_cart/domain/model"
 
 	"gorm.io/gorm"
 )
