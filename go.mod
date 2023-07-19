@@ -1,4 +1,4 @@
-module micro_cart
+module github.com/hao508506/micro_cart
 
 go 1.18
 
