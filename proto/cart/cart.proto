@@ -1,0 +1,53 @@
+syntax = "proto3";
+
+package go.example.service.cart;
+
+option go_package = "./proto/cart";
+
+service Cart {
+	rpc AddCart(CartInfo) returns (CartResponse) {}
+	rpc CleanCart(CleanInfo) returns (Response) {}
+	rpc IncrItem(ItemInfo) returns (Response) {}
+	rpc DecrItem(ItemInfo) returns (Response) {}
+	rpc DeleteItemById(CartIdRequest) returns (Response) {}
+	rpc GetAllCart(FindAllRequest) returns (FindAllResponse) {}	//返回列表
+}
+
+message CartInfo {
+	int64 id = 1;
+	int64 user_id = 2;
+	int64 product_id = 3;
+	int64 size_id = 4;
+	int64 num = 5;
+}
+
+message CartResponse {
+	int64 id = 1;
+	string msg = 2;
+}
+
+message CleanInfo {
+	int64 uid = 1;
+}
+
+message Response {
+	string msg = 1;
+}
+
+message ItemInfo {
+	int64 id = 1;
+	int64 num = 2;
+}
+
+message CartIdRequest {
+	int64 id = 1;
+}
+
+message FindAllRequest {
+	int64 uid = 1;
+}
+
+//数组列表
+message FindAllResponse {
+	repeated CartInfo cart_info = 1;
+}
